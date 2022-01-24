@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+
+import Header from './components/Header/Header.js';
+import CTA from './components/CTA/CTA.js';
+import King from './components/King/King';
+import About from './components/About/About'
+import Phone from './components/Phone/Phone'
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div style={{ width:"100vw", display:"flex", alignItems:"center", flexDirection:'column'}}>
+        <Header />
+        <CTA />
+        <King />
+        <About />
+        <Phone />
+      </div>
     </div>
   );
 }
