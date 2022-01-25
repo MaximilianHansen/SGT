@@ -2,6 +2,7 @@ import headerImg from '../../img/headerImg.png';
 import headerImg1 from '../../img/headerImg1.png';
 import headerImg2 from '../../img/headerImg2.png';
 import headerImg3 from '../../img/headerImg3.png';
+import './CTA.css'
 
 import React, {useState, useEffect } from 'react';
 
@@ -32,13 +33,14 @@ function CTA() {
 
     return (
         <>  
-
-                <img src={image} style={{width: "90vw", borderRadius:"5%", marginTop:'10px'}}></img>
             
-            <div style={{ width:"85%", display:"flex", flexDirection:'column', marginTop:'30px', marginBottom:'30px'}}>
-            <h1 style={{marginBottom:"0px", marginTop: '0px'}}>Small Group Training is here</h1>
-            <p style={{}}>Fun high intensity interval training workouts for all levels</p>
-            <button style={{width:'50%', borderRadius: '6px', height: "2em", backgroundColor:"#f63c04"}}>Try a sesion</button>
+            <div id="wrapper1" >
+            <img id="headerImg" src={image} ></img>
+            <div id="wrapper2">
+                <h1>Small Group Training is here</h1>
+                <p>Fun high intensity interval training workouts for all levels</p>
+                <button style={{width:'50%', borderRadius: '6px', height: "2em", backgroundColor:"#f63c04"}}>Try a sesion</button>
+            </div>
             </div>
         </>
     );
