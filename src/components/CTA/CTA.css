@@ -35,8 +35,8 @@ h1{
         width:85%; 
         display: flex;
         flex-Direction: row; 
-        margin-Top:30px;
-        margin-Bottom:30px;
+        margin-Top:40px;
+        margin-Bottom:40px;
         justify-content: space-evenly;
     }
 
@@ -82,8 +82,8 @@ h1{
         width:65%; 
         display: flex;
         flex-Direction: row; 
-        margin-Top:80px;
-        margin-Bottom:150px;
+        margin-Top:90px;
+        margin-Bottom:160px;
         justify-content: space-evenly;
     }
 

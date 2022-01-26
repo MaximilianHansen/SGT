@@ -5,12 +5,11 @@ import './Phone.css'
 function Phone() {
     return (
         
-    <div>
-        <div>
+    <div id='secWrap'>
+        <div id="aboutWrap">
             <div id='titleWrap'>
               <h1 id='title'>How it works</h1>
-            </div>
-            <div id='listDiv' >
+              <div id='listDiv' >
               <ul>
                 <li>Groups of 4 people</li>
                 <li>45 Minute Workouts</li>
@@ -18,10 +17,12 @@ function Phone() {
                 <li>Sessions available morning, afternoon, and evening</li>
               </ul>
             </div>
+            </div>
+            
         </div>
 
-        <div>
-            <div id='titleWrap'>
+        <div id="phoneSecWrap">
+            <div id='title2Wrap'>
               <h1 id='title2'>Get on a schedule</h1>
             </div>
             <div id='phoneWrap'>

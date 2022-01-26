@@ -7,7 +7,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: #f9f9f9
+    
 }
 
 #listDiv {
@@ -21,14 +21,23 @@
 #title{
     width: 85%;
     margin-bottom: 15px;
-    margin-top: 35px
+    margin-top: 35px;
+    text-align :left;
 }
 
 
 #title2{
     width: 85%;
     margin-bottom: 15px;
-    margin-top: 35px
+    margin-top: 35px;
+}
+
+#title2Wrap{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f9f9f9
 }
 
 
@@ -53,8 +62,62 @@ background-color: #f9f9f9
 
 @media only screen and (min-width: 768px) {
 
+#secWrap {
+    display : flex;
+    flex-direction: row;
+    justify-content: center;
+    width : 100vw;
+}
 
-  
+#phoneWrap{
+    background-color: white;
+}
+
+#title2Wrap{
+    background-color: white;
+
+}
+
+#phoneSecWrap {
+    width: 30%;
+}
+
+#aboutWrap {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+#title {
+    width: 100%;
+    font-size: 50px;
+    text-align: center;
+}
+
+#title2{
+    visibility: hidden;
+}
+
+    #listDiv {
+        width: 70%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 30px;
+        font-size: 25px
+    }
+
+
+#titleWrap{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+
 }
 
 @media only screen and (min-width: 2100px) {
