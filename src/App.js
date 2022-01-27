@@ -4,17 +4,23 @@ import React, {useState, useEffect} from 'react';
 import Header from './components/Header/Header.js';
 import CTA from './components/CTA/CTA.js';
 import King from './components/King/King';
-import About from './components/About/About'
-import Phone from './components/Phone/Phone'
+import Phone from './components/Phone/Phone';
+import LeadGen from './components/LeadGen/LeadGen';
 
 
 function App() {
 
-  const [isMobile, setIsmobile] = useState()
+  const [isMobile, setIsmobile] = useState(true);
+  const [isLeadGen, setIsLeadGen] = useState(false);
+  const [isHam, setIsHam] = useState(false)
+
+
+
 
 
 useEffect(()=>{  
-  
+  if(window.innerWidth>700){setIsmobile(false)};
+
   window.addEventListener('resize', resize);
     function resize() {
     if (window.innerWidth < 700) {
@@ -27,15 +33,28 @@ useEffect(()=>{
 
 })
 
+const hamburgFunc = () => {
+  setIsHam(!isHam)
+}
 
+const leadGenSwitch = () => {
+  console.log('clicked')
+  setIsLeadGen(!isLeadGen);
+  setIsHam(false);
+}
   return (
     <div className="App">
       <div style={{ width:"100vw", display:"flex", alignItems:"center", flexDirection:'column'}}>
-        <Header isMobile={isMobile}/>
-        <CTA />
-        <King />
-    
-        <Phone />
+        <Header isMobile={isMobile} isLeadGen={leadGenSwitch} isHam={isHam} hamburgFunc={hamburgFunc}/>
+            {!isLeadGen? 
+              <>
+                <CTA isLeadGen={leadGenSwitch}/>
+                <King />
+                <Phone />
+              </>
+              :
+                <LeadGen isLeadGen={leadGenSwitch}/>
+            }
       </div>
     </div>
   );

@@ -8,7 +8,7 @@ function Phone() {
     <div id='secWrap'>
         <div id="aboutWrap">
             <div id='titleWrap'>
-              <h1 id='title'>How it works</h1>
+              <h1 id='title'>Here's how it works</h1>
               <div id='listDiv' >
               <ul>
                 <li>Groups of 4 people</li>

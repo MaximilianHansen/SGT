@@ -1,0 +1,116 @@
+#leadGenWrapper {
+    height:90vh;
+    background-color: #4cb699;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#topHeader {
+    color: white;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    
+} 
+
+#leadGenWrapper h2{
+    color: white;
+    margin-bottom: 40px;
+   
+} 
+
+#leadGenWrapper h1 {
+    color: white;
+    font-size: 45px;
+}
+div#leadGenWrapper button {
+    border-radius: 5px;
+    background-color: #e77045;
+    margin-bottom: 30px;
+    height: 40px;
+    width: 70%;
+    cursor: pointer;
+}
+
+
+#exit {
+    padding: 10px;
+   font-size: 30px;
+   color: white;
+   margin:0px
+}
+
+
+div#leadGenWrapper img {
+    width: 30%;
+    margin-Top: 15%;
+    margin-Right: 5%;
+}
+
+input {
+    
+    margin-bottom: 30px;
+    height: 2.5em;
+    width : 70%;
+}
+
+div#routeChanger {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media only screen and (min-width: 768px) {
+    #leadGenWrapper h1 {
+        color: white;
+        font-size: 55px;
+        margin-bottom: 40px;
+    }
+    div#leadGenWrapper img {
+        width: 10%;
+       
+        margin-Right: 5%;
+    }
+    #leadGenWrapper h2{
+        color: white;
+        width : 50%;
+       
+    } 
+    div#leadGenWrapper button  {
+        border-radius: 5px;
+        background-color: #e77045;
+        margin-bottom: 15px;
+        margin-top: 15px;
+        height: 50px;
+        width: 60%;
+    }
+
+    input {
+        font-size: 2em;
+        margin-bottom: 30px;
+        height: 2em;
+        width : 40%;
+    }
+
+    div#routeChanger button#lastSlideBtn {
+        width : 40%
+    }
+    
+    #exit {
+        padding: 10px;
+       font-size: 30px;
+       color: white;
+    }
+
+    
+}
+
+@media only screen and (min-width: 2100px) {
+
+
+
+}
+

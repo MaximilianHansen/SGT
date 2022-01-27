@@ -28,7 +28,7 @@ h1{
         border-Radius:5%;
         margin-Top:30px;
         width:40%;   
-        height:auto;
+        
     }
 
     #wrapper1{
@@ -75,11 +75,10 @@ h1{
         border-Radius:5%;
         margin-Top:30px;
         width:40%;   
-        height:auto;
+        height: auto;
     }
 
     #wrapper1{
-        width:65%; 
         display: flex;
         flex-Direction: row; 
         margin-Top:90px;

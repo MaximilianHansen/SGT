@@ -7,12 +7,12 @@ import './CTA.css'
 import React, {useState, useEffect } from 'react';
 
 
-function CTA() {
+function CTA({isLeadGen}=this.props) {
 
 
     const imgArr = [headerImg,headerImg1, headerImg2, headerImg3]
     const [image, setImage] = useState(headerImg)
-
+    
 
     useEffect(() => {
         imgSlider()
@@ -39,7 +39,7 @@ function CTA() {
             <div id="wrapper2">
                 <h1>Small Group Training is here</h1>
                 <p>Fun high intensity interval training workouts for all levels</p>
-                <button style={{width:'50%', borderRadius: '6px', height: "2em", backgroundColor:"#f63c04"}}>Try a sesion</button>
+                <button onClick={isLeadGen} style={{width:'50%', borderRadius: '6px', height: "2em", backgroundColor:"#f63c04"}}>Try a sesion</button>
             </div>
             </div>
         </>
