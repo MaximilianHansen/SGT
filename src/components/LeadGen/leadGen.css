@@ -34,19 +34,29 @@ div#leadGenWrapper button {
     cursor: pointer;
 }
 
+#pageDot1, #pageDot2, #pageDot3 {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    border: 2px white solid;
+}
+
+div.active {
+    background-color: white;
+
+}
+
 
 #exit {
     padding: 10px;
-   font-size: 30px;
+   font-size: 20px;
    color: white;
    margin:0px
 }
 
 
 div#leadGenWrapper img {
-    width: 30%;
-    margin-Top: 15%;
-    margin-Right: 5%;
+    width: 50%;
 }
 
 input {
@@ -61,6 +71,11 @@ div#routeChanger {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+#pageDotWrap {
+    margin-top: 15px;
+    width : 25%
 }
 
 @media only screen and (min-width: 768px) {
@@ -85,7 +100,7 @@ div#routeChanger {
         margin-bottom: 15px;
         margin-top: 15px;
         height: 50px;
-        width: 60%;
+        width: 40%;
     }
 
     input {
@@ -103,6 +118,18 @@ div#routeChanger {
         padding: 10px;
        font-size: 30px;
        color: white;
+    }
+
+    #pageDot1, #pageDot2, #pageDot3 {
+        border-radius: 50%;
+        width: 15px;
+        height: 15px;
+        border: 2px white solid;
+    }
+
+    #pageDotWrap {
+        width: 15%;
+        margin-top: 40px;
     }
 
     

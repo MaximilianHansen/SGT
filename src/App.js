@@ -42,10 +42,15 @@ const leadGenSwitch = () => {
   setIsLeadGen(!isLeadGen);
   setIsHam(false);
 }
+
+const scrollTo = () => {
+  var elmnt = document.getElementById("secWrap");
+  elmnt.scrollIntoView({behavior: "smooth"});
+}
   return (
     <div className="App">
       <div style={{ width:"100vw", display:"flex", alignItems:"center", flexDirection:'column'}}>
-        <Header isMobile={isMobile} isLeadGen={leadGenSwitch} isHam={isHam} hamburgFunc={hamburgFunc}/>
+        <Header isMobile={isMobile} isLeadGen={leadGenSwitch} isHam={isHam} hamburgFunc={hamburgFunc} scrollTo= {scrollTo} />
             {!isLeadGen? 
               <>
                 <CTA isLeadGen={leadGenSwitch}/>
